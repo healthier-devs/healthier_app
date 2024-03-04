@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/appLogo.png",
+      "sha1": "cee5b8d01e1f7086aa1eeef6d7c1b1fea9f1d9b6"
+    },
+    {
+      "path": "src/assets/appLogo_large.png",
+      "sha1": "6c4d51e6fc1823ccce8d314007e018da5c15c807"
+    },
+    {
+      "path": "src/assets/splash/splash_video.mp4",
+      "sha1": "c631f881396495bba94a5fe7bf58077de53b9cfa"
+    }
+  ]
+}
