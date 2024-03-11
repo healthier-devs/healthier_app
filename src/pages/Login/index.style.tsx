@@ -1,0 +1,86 @@
+import { StyleSheet } from "react-native";
+import { convertToRelativeSize } from "../../utils";
+
+export const styles = StyleSheet.create({
+  topbar: {
+    backgroundColor: "#131416",
+  },
+  container: {
+    width: "100%",
+    height: "100%",
+    paddingTop: convertToRelativeSize()(60),
+    paddingHorizontal: convertToRelativeSize()(20),
+    paddingBottom: convertToRelativeSize()(40),
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  },
+  topArea: {
+    width: "100%",
+    display: "flex",
+    textAlign: "right",
+    color: "#999DA4",
+  },
+  midArea: {
+    width: "100%",
+    height: "auto",
+    display: "flex",
+    flexDirection: "column",
+    gap: convertToRelativeSize()(20),
+    alignItems: "center",
+    // backgroundColor: "yellowgreen",
+  },
+  midAreaText: {
+    color: "#e8e8e8",
+    textAlign: "center",
+    fontSize: 16,
+    fontWeight: "400",
+    lineHeight: 24,
+    letterSpacing: -0.3,
+  },
+  btmArea: {
+    alignSelf: "baseline",
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    gap: convertToRelativeSize()(24),
+  },
+  loginIcons: {
+    display: "flex",
+    flexDirection: "row",
+    gap: convertToRelativeSize()(16),
+    justifyContent: "center",
+  },
+  kakaoIcon: {
+    width: convertToRelativeSize()(54),
+    aspectRatio: 1 / 1,
+    borderRadius: 999,
+    backgroundColor: "#FEE500",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  appleIcon: {
+    width: convertToRelativeSize()(54),
+    aspectRatio: 1 / 1,
+    borderRadius: 999,
+    backgroundColor: "#F8F8F8",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  text: {
+    color: "#e8e8e8",
+    fontSize: 13,
+    fontWeight: "400",
+    lineHeight: 19.5,
+    letterSpacing: -0.3,
+  },
+  registerArea: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: convertToRelativeSize()(12),
+  },
+});
