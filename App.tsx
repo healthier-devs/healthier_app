@@ -1,15 +1,9 @@
 import React, { useState } from "react";
-
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
-
 import Video from "react-native-video";
+
+import { SafeAreaView, StatusBar, StyleSheet, View } from "react-native";
+
+import HealthierNavigation from "./navigation";
 
 function App(): React.JSX.Element {
   const [showSplash, setShowSplash] = useState(true);
@@ -36,16 +30,17 @@ function App(): React.JSX.Element {
   }
 
   return (
-    <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor="#131416" />
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <Text>1234</Text>
-      </ScrollView>
-    </SafeAreaView>
+    <>
+      <StatusBar backgroundColor="#131416" barStyle="light-content" />
+      <HealthierNavigation />
+    </>
   );
 }
 
 const styles = StyleSheet.create({
+  topbar: {
+    backgroundColor: "#131416",
+  },
   fullScreen: {
     flex: 1,
     justifyContent: "center",
